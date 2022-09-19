@@ -6,7 +6,16 @@ A ROS package for trajectory optimization in  $\mathbb{R}^3$. Developing...
 
 
 ## Quick Start
-
+0. Install OSQP as instructed [here](https://osqp.org/docs/get_started/sources.html#build-the-binaries) or follow commands below:
+  ```
+  git clone --recursive https://github.com/osqp/osqp
+  cd osqp/
+  mkdir build
+  cd build/
+  cmake -G "Unix Makefiles" ..
+  cmake --build .
+  sudo cmake --build . --target install
+  ```
 1. Clone this repo, and build
   ```
   catkin build
